@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+
+# Git / IDE
+.vscode/
+.idea/
+
+# Dataset and output
+datasets/
+results/
+test_video/
+outputs/
+*.mp4
+*.avi
+*.mov
+
+# Training outputs
+runs/**
+vasco/**
+
+# Keep inference weights
+!runs/train/
+!runs/train/det_1/
+!runs/train/det_1/weights/
+!runs/train/det_1/weights/best.pt
+!runs/train/seg_1/
+!runs/train/seg_1/weights/
+!runs/train/seg_1/weights/best.pt
+
+!vasco/train/
+!vasco/train/det_nopretrain_16/
+!vasco/train/det_nopretrain_16/weights/
+!vasco/train/det_nopretrain_16/weights/best.pt
+!vasco/train/seg_pre16_cls7/
+!vasco/train/seg_pre16_cls7/weights/
+!vasco/train/seg_pre16_cls7/weights/best.pt
